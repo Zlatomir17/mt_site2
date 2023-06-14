@@ -1,4 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/Untitled/Users/milen/Desktop/mt_site
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp -R images $DEPLOYPATH
