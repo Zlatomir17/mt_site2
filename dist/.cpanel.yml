@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/Untitled/Users/milen/Desktop/mt_site
