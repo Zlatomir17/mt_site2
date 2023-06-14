@@ -1,0 +1,376 @@
+// Tablets and smaller
+
+@media (max-height: 500px) {
+  body .team {
+    .section-header {
+      .bottom-line {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  body .solutions {
+    .row {
+      // height: 390px;
+      position: relative; //polgedni da mahnesh clip patha
+      overflow: hidden; //polgedni da mahnesh clip patha
+      clip-path: none; //polgedni da mahnesh clip patha
+
+      flex-direction: row;
+      //   flex-wrap: wrap;
+      width: 100%;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      .column-1 {
+        // height: 100%;
+        position: relative;
+        width: 100%; /* Set a fixed width for the container */
+        height: 100%; /* Set a fixed height for the container */
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%; /* Set the image width to 100% of the container */
+          height: 100%; /* Set the image height to 100% of the container */
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  body .hero {
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      h1 {
+        padding-top: 50px;
+        font-size: 35px;
+      }
+      p {
+        font-size: 20px;
+        max-width: 600px;
+        margin: 10px 0px 30px;
+      }
+    }
+  }
+  body .history {
+    .row {
+      flex-direction: row-reverse;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        .column-1 {
+          // height: 100%;
+          // height: 100%;
+          position: relative;
+          width: 100%; /* Set a fixed width for the container */
+          height: 400px; /* Set a fixed height for the container */
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Set the image width to 100% of the container */
+            height: 100%; /* Set the image height to 100% of the container */
+            object-fit: cover;
+          }
+        }
+        .column-2 {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 30px;
+          h2 {
+            font-size: 30px;
+            font-weight: 100;
+          }
+          h4 {
+            margin-bottom: 20px;
+          }
+          p {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  body .hero {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+      height: 125px;
+      a {
+        padding: 3px 5px;
+      }
+
+      .logo {
+        height: 80px;
+        width: 80px;
+        padding-top: 10px;
+        margin-left: 0px;
+        // transform: translateY(20px); -> on scroll
+      }
+      // ul {
+      //   // padding-bottom: 10px;
+      // }
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      h1 {
+        padding-top: 90px;
+        font-size: 35px;
+      }
+      p {
+        font-size: 20px;
+        max-width: 600px;
+        margin: 10px 0px 30px;
+      }
+    }
+  }
+
+  .flex-items {
+    flex-direction: column;
+
+    div {
+      padding: 10px;
+      flex: 1;
+      text-align: center;
+      h2 {
+        padding: 10px;
+        color: $dark-color;
+        font-size: bold;
+      }
+    }
+  }
+  body .icons {
+    .bottom-line {
+      width: 18rem;
+    }
+
+    i {
+      margin-bottom: 10px;
+    }
+  }
+  body .solutions {
+    .row {
+      position: relative; //polgedni da mahnesh clip patha
+      overflow: hidden; //polgedni da mahnesh clip patha
+      clip-path: none; //polgedni da mahnesh clip patha
+
+      flex-direction: column;
+      //   flex-wrap: wrap;
+      width: 100%;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      .column-1 {
+        // height: 100%;
+        position: relative;
+        width: 100%; /* Set a fixed width for the container */
+        height: 200px; /* Set a fixed height for the container */
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%; /* Set the image width to 100% of the container */
+          height: 100%; /* Set the image height to 100% of the container */
+          object-fit: cover;
+        }
+      }
+      .column-2 {
+        h2 {
+          font-size: 30px;
+          font-weight: 100;
+        }
+        h4 {
+          margin-bottom: 20px;
+        }
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .column .column-2 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 30px;
+    }
+  }
+  body #cases {
+    .bottom-line {
+      width: 18rem;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+  body .history {
+    .row {
+      flex-direction: row-reverse;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        .column-1 {
+          // height: 100%;
+          // height: 100%;
+          position: relative;
+          width: 100%; /* Set a fixed width for the container */
+          height: 200px; /* Set a fixed height for the container */
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Set the image width to 100% of the container */
+            height: 100%; /* Set the image height to 100% of the container */
+            object-fit: cover;
+          }
+        }
+        .column-2 {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 30px;
+          h2 {
+            font-size: 30px;
+            font-weight: 100;
+          }
+          h4 {
+            margin-bottom: 20px;
+          }
+          p {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+  body .contact {
+    background-color: $dark-color;
+    margin-bottom: 30px;
+    .contact_title {
+      background-color: $dark-color;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      h1 {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 25px;
+        color: $medium-color;
+      }
+      .bottom-line {
+        width: 18rem;
+      }
+    }
+    &-info {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      div {
+        border-bottom: 1px white solid;
+        padding: 5px;
+      }
+      div:last-child {
+        border-bottom: none;
+      }
+      i {
+        background-color: $dark-color;
+        color: #fff;
+        font-size: 60px;
+        padding: 5px;
+      }
+      h3 {
+        color: $medium-color;
+      }
+      p {
+        color: $medium-color;
+      }
+    }
+  }
+
+  // body.footer .social > * {
+  //   margin-right: 30px;
+  // }
+  body .footer {
+    .social {
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      i {
+        background-color: $dark-color;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+      p {
+        color: $medium-color;
+      }
+      i:hover {
+        color: $medium-color;
+      }
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+}
+
+@media (max-height: 320px) {
+}
