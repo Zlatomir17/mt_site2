@@ -1,5 +1,15 @@
 // Tablets and smaller
 
+@media (max-width: 450px) {
+  body .team {
+    .section-header {
+      .bottom-line {
+        width: 17rem;
+      }
+    }
+  }
+}
+
 @media (max-height: 500px) {
   body .team {
     .section-header {
